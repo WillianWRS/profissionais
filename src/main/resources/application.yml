@@ -1,0 +1,45 @@
+spring:
+  profiles:
+    active: default
+
+---
+
+spring:
+  application:
+    name: profissionais
+  profiles:
+    active: dev
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+
+---
+
+spring:
+  profiles:
+    active: test
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+---
+
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

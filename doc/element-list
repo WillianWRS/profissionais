@@ -1,0 +1,12 @@
+com.practiceroom.profissionais
+com.practiceroom.profissionais.config
+com.practiceroom.profissionais.controller
+com.practiceroom.profissionais.dto.contato
+com.practiceroom.profissionais.dto.profissional
+com.practiceroom.profissionais.enumerator
+com.practiceroom.profissionais.exception
+com.practiceroom.profissionais.exception.handle
+com.practiceroom.profissionais.model
+com.practiceroom.profissionais.repository
+com.practiceroom.profissionais.service
+com.practiceroom.profissionais.util
